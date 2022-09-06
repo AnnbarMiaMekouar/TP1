@@ -7,10 +7,56 @@
     <title> Annbar Mia MEKOUAR</title>
 </head>
 <body>
-    
-
-    
+    <h1>Annbar Mia MEKOUAR</h1>
+    <nav>
+      <ul>
+        <!--<li><a href="#"> A propos de Annbar </a></li>-->
+        <li><a href="#"> Formations et certifications</a></li>
+        <li><a href="#"> Expériences professionnelles</a></li>
+        <li><a href="#"> Activitées associatives</a></li>
+      </ul>
+    </nav>
+     
 
 
 </body>
 </html>
+
+<style>
+
+
+nav{
+    width: 100%;
+    margin: 0px auto 40px auto;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0px;
+}
+
+
+nav li{
+    float: left;
+    width: 25%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: red;
+}
+
+
+</style>
